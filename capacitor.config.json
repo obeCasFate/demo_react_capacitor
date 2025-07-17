@@ -1,0 +1,41 @@
+{
+  "appId": "com.test.app",
+  "appName": "倉庫管理",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "http",
+    "allowNavigation": [
+      "http://127.0.0.1:8000",
+      "http://localhost:8000",
+      "http://10.10.29.129:8000",
+      "http://0.0.0.0:8000",
+      "http://10.0.2.2:8000"
+    ],
+    "cleartext": true
+  },
+  "plugins": {
+    "CapacitorHttp": {
+      "enable": true
+    },
+    "CapacitorSQLite": {
+      "iosDatabaseLocation": "Library/CapacitorDatabase",
+      "iosIsEncryption": false,
+      "iosKeychainPrefix": "com.test.app",
+      "iosBiometric": {
+        "biometricAuth": false,
+        "biometricTitle": "Biometric login for capacitor sqlite"
+      },
+      "androidDatabaseLocation": "default",
+      "androidIsEncryption": false,
+      "androidBiometric": {
+        "biometricAuth": false,
+        "biometricTitle": "Biometric login for capacitor sqlite",
+        "biometricSubTitle": "Log in using your biometric"
+      },
+      "electronIsEncryption": false,
+      "electronWindowsLocation": "%APPDATA%\\TaskManager\\Databases",
+      "electronMacLocation": "~/Library/Application Support/TaskManager/Databases",
+      "electronLinuxLocation": "~/.config/TaskManager/Databases"
+    }
+  }
+}
