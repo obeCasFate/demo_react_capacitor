@@ -276,7 +276,7 @@ class AuthService {
       // SQLite上でトークンを保存
       await sqliteService.saveAuthToken(user.id, token);
 
-      // メモリにも保存
+      // メモリにも保存 class
       this.currentUser = user;
       this.currentToken = token;
 

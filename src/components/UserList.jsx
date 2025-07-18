@@ -409,7 +409,7 @@ const UserList = ({ user }) => {
       )}
       {/* Footer Info */}
       {users.length > 0 && (
-        <div className="mt-6 pt-4 border-t border-gray-200">
+        <div className="mt-2 pt-4 mb-3 border-t border-gray-200">
           <div className="text-sm text-gray-500 text-center">
             {authService.isAuthenticated()
               ? `認証済み - データベースから${users.length}人のユーザーを表示中`

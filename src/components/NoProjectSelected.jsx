@@ -10,8 +10,8 @@ export default function NoProjectSelected({ onStartAddProject }) {
         alt="An empty task list"
         className="w-16 h-16 object-contain mx-auto"
       />
-      <h2 className="text-xl font-bold text-stone-500 my-4">
-        項目が選択されていません
+      <h2 className="text-2xl font-bold text-stone-500 my-4">
+        総合発注・在庫管理
       </h2>
       <p className="text-stone-400 mb-4">
         既存データタを選ぶか、新規データを登録しましょう
